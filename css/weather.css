@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-nav-custom{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.navbar-brand h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-green{
+    color: darkgreen;
+}
+
+nav a{
+    color: #fff !important;
+}
+
+nav .input-custom{
+    border-radius: 30px;
+}
+
+nav .b-custom{
+    position: absolute;
+    color: rgba(0, 100, 0) !important;
+    right: 15%;
+    color: rgb();
+}
+
+#weatherPosts, #today-forecast{
+    color: black;
+}
+
+.current-weather-coords, .aside, #today-forecast{
+    box-shadow: black 0px 0px 10px 4px;
+    background-color: rgba(242, 242, 242, .8);
+    margin-right: 30px;
+}
+
+.img-custom{
+    position: absolute;
+    height: 270px;
+    -webkit-font-smoothing: antialiased;
+    top: -25%;
+}
+
+.current-weather-coords h6, .aside h6{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#today-forecast{
+    flex: 78% !important;
+    max-width: 69%;
+    margin: 0 13.7% !important;
+}
