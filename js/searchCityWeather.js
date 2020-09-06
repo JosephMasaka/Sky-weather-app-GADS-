@@ -32,8 +32,8 @@ $(document).ready(function () {
             $('#weatherPosts').html(
                 `<div class="current-weather-coords well px-5 py-3 col-7">
                     <div class="mt-3">
-                        <h6 class="d-inline">${location.city}, </h6>
-                        <h6 class="d-inline">${location.country} Weather</h6>
+                        <h6 class="d-inline">${responseCity.name}, </h6>
+                        <h6 class="d-inline">${responseCity.sys.country} Weather</h6>
                     </div>
                     <p>as of <span class="font-weight-bold"> ${formatAMPM(new Date)}</span></p>
                     <div class="row p-0 m-0">
@@ -48,9 +48,9 @@ $(document).ready(function () {
                 </div>
                 <div class="col-4 aside px-5">
                     <h6 class="font-weight-bold mt-4 mb-2">Other atmospheric conditions</h6>
-                    <p class="mb-1"><span class="font-weight-bold">Pressure:</span> ${responseCity.pressure}pa</p>
+                    <p class="mb-1"><span class="font-weight-bold">Pressure:</span> ${responseCity.main.pressure}pa</p>
                     <p class="mb-1"><span class="font-weight-bold">Wind speed:</span> ${responseCity.wind_speed}Km/h</p>
-                    <p class="mb-1"><span class="font-weight-bold">Humidity:</span> ${responseCity.humidity} %</p>
+                    <p class="mb-1"><span class="font-weight-bold">Humidity:</span> ${responseCity.main.humidity} %</p>
                     <p class="mb-1"><span class="font-weight-bold">Visibility:</span> ${responseCity.visibility}mtrs</p>
                 </div>
             `)
