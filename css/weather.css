@@ -61,3 +61,195 @@ nav .b-custom{
     max-width: 69%;
     margin: 0 13.7% !important;
 }
+
+@media screen and (max-width: 1500px){
+    nav .b-custom{
+        right: 18%;
+    }
+}
+
+@media screen and (max-width: 1460px){
+    nav .b-custom{
+        right: 17%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    nav .b-custom{
+        right: 16%;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    nav .b-custom{
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    nav .b-custom{
+        right: 13%;
+    }
+}
+
+@media screen and (max-width: 1240px){
+    nav .b-custom{
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    nav .b-custom{
+        right: 17%;
+    }
+}
+
+@media screen and (max-width: 1096px){
+    nav .b-custom{
+        right: 13%;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    nav .b-custom{
+        right: 11%;
+    }
+
+    .img-custom {
+        top: -15%;
+        right: 0%;
+    }
+
+    #weatherPosts {
+        display: block;
+    }
+
+    #weatherPosts .current-weather-coords {
+        -ms-flex: 0 0 100.333333%;
+        flex: 0 0 100.333333%;
+        max-width: 100.333333%;
+    }
+
+    .aside {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 100.333333% !important;
+        max-width: 100.333333% !important;
+        padding: 0 0 10px 0;
+    }
+
+    .aside h6{
+        padding-top: 15px;
+    }
+
+    #today-forecast {
+        flex: 72.5% !important;
+        max-width: 72.5%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    nav .b-custom {
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 920px){
+    nav .b-custom {
+        right: 18%;
+    }
+}
+
+@media screen and (max-width: 880px){
+    nav .b-custom {
+        right: 16%;
+    }
+}
+
+@media screen and (max-width: 840px){
+    nav .b-custom {
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    nav .b-custom {
+        right: 13%;
+    }
+}
+
+@media screen and (max-width: 765px){
+    nav .container {
+        max-width: 90%;
+    }
+
+    nav .b-custom {
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 685px){
+    nav .b-custom {
+        right: 16%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav .b-custom {
+        right: 13%;
+    }
+
+    #weatherPosts{
+        max-width: 95%;
+    }
+
+    #today-forecast {
+        flex: 90% !important;
+        max-width: 90%;
+        margin: 0 5% !important;
+    }
+
+    nav .container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    nav .b-custom {
+        right: 15%;
+    }
+
+    .img-custom{
+        height: 200px;
+        top: 0;
+    }
+
+    .daily-forecast h1{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 392px){
+    nav a h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #today-forecast {
+        flex: 90% !important;
+        max-width: 88%;
+        margin: 0 6% !important;
+    }
+
+    nav form{
+        padding: 0 !important;
+    }
+
+    #today-forecast h5{
+        font-size: 1rem;
+    }
+
+    nav a h3{
+        font-size: 1rem;
+    }
+}

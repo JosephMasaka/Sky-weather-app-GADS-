@@ -49,38 +49,38 @@ $(document).ready(function () {
                 <div class="col-4 aside px-5">
                     <h6 class="font-weight-bold mt-4 mb-2">Other atmospheric conditions</h6>
                     <p class="mb-1"><span class="font-weight-bold">Pressure:</span> ${responseCity.main.pressure}pa</p>
-                    <p class="mb-1"><span class="font-weight-bold">Wind speed:</span> ${responseCity.wind_speed}Km/h</p>
+                    <p class="mb-1"><span class="font-weight-bold">Wind speed:</span> ${responseCity.wind.speed}Km/h</p>
                     <p class="mb-1"><span class="font-weight-bold">Humidity:</span> ${responseCity.main.humidity} %</p>
                     <p class="mb-1"><span class="font-weight-bold">Visibility:</span> ${responseCity.visibility}mtrs</p>
                 </div>
             `)
 
-            /*$('#today-forecast').html(
-                `<h5 class="font-weight-bold px-4 my-3">Average Daily Temperature for ${location.city}, ${location.country}</h5>
+            $('#today-forecast').html(
+                `<h5 class="font-weight-bold px-4 my-3">Average Daily Temperature for ${responseCity.name}, ${responseCity.sys.country}</h5>
                 <div class="row daily-forecast text-center">
                     <div class="col">
-                        <h6 class="font-weight-bold mb-3">Day</h6>
-                        <h1>${parseInt(responseCity.daily[0].feels_like.day) - 273}<sup>&#176;</sup>C </h1>
+                        <h6 class="font-weight-bold mb-3">Current Temp</h6>
+                        <h1>${parseInt(responseCity.main.temp) - 273}<sup>&#176;</sup>C </h1>
                     </div>
                     <div class="col">
-                        <h6 class="font-weight-bold mb-3">Night</h6>
-                        <h1>${parseInt(responseCity.daily[0].feels_like.night) - 273}<sup>&#176;</sup>C </h1>
+                        <h6 class="font-weight-bold mb-3">Max Temp</h6>
+                        <h1>${parseInt(responseCity.main.temp_max) - 273}<sup>&#176;</sup>C </h1>
                     </div>
                     <div class="col">
-                        <h6 class="font-weight-bold mb-3">Morning</h6>
-                        <h1>${parseInt(responseCity.daily[0].feels_like.eve) - 273}<sup>&#176;</sup>C </h1>
+                        <h6 class="font-weight-bold mb-3">Min Temp</h6>
+                        <h1>${parseInt(responseCity.main.temp_min) - 273}<sup>&#176;</sup>C </h1>
                     </div>
                     <div class="col">
-                        <h6 class="font-weight-bold mb-3">Evening</h6>
-                        <h1>${parseInt(responseCity.daily[0].feels_like.morn) - 273}<sup>&#176;</sup>C </h1>
+                        <h6 class="font-weight-bold mb-3">Average Temp</h6>
+                        <h1>${parseInt(responseCity.main.feels_like) - 273}<sup>&#176;</sup>C </h1>
                     </div>
                 </div>
                 <div class="col-6 ml-4">
                     <img class="" src="${iconUrl}" alt="current_weather_icon">
-                    <p class="mb-1"><span class="font-weight-bold">Main:</span> ${responseCity.daily[0].weather[0].main}</p>
-                    <p><span class="font-weight-bold">Description:</span> ${responseCity.daily[0].weather[0].description}</p>
+                    <p class="mb-1"><span class="font-weight-bold">Main:</span> ${responseCity.weather[0].main}</p>
+                    <p><span class="font-weight-bold">Description:</span> ${responseCity.weather[0].description}</p>
                 </div>`
-            )*/
+            )
         });
     });  
 });
