@@ -12,9 +12,9 @@ $(document).ready(function () {
             console.log(weatherResponse);
             var farhenheit = weatherResponse.current.temp;
             var iconcode = weatherResponse.current.weather[0].icon;
-            var iconUrl = "http://openweathermap.org/img/wn/" + iconcode + "@2x.png";
+            var iconUrl = "https://openweathermap.org/img/wn/" + iconcode + "@2x.png";
             var iconDailycode = weatherResponse.daily[0].weather[0].icon;
-            var iconDailyUrl = "http://openweathermap.org/img/wn/" + iconDailycode + "@2x.png";
+            var iconDailyUrl = "https://openweathermap.org/img/wn/" + iconDailycode + "@2x.png";
             function formatAMPM(date) {
                 var hours = date.getHours();
                 var minutes = date.getMinutes();

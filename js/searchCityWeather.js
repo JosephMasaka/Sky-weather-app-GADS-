@@ -9,7 +9,7 @@ $(document).ready(function () {
 
             var farhenheit = responseCity.main.temp;
             var iconcode = responseCity.weather[0].icon;
-            var iconUrl = "http://openweathermap.org/img/wn/" + iconcode + "@2x.png";
+            var iconUrl = "https://openweathermap.org/img/wn/" + iconcode + "@2x.png";
 
             function formatAMPM(date) {
                 var hours = date.getHours();
