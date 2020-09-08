@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //Get Current Location
-    var getIP = 'http://ip-api.com/json/';
+    var getIP = 'https://ip-api.com/json/';
 
     $.getJSON(getIP).done(function (location) {
         console.log(location);
