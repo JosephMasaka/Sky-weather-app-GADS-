@@ -1,11 +1,11 @@
 $(document).ready(function () {
     //Get Current Location
-    var getIP = 'http://ip-api.com/json/';
+    var getIP = 'https://api.ipgeolocation.io/ipgeo?apiKey=f422b61d249f4a448adb1f65f2912901';
 
     $.getJSON(getIP).done(function (location) {
         console.log(location);
-        var latitude = location.lat;
-        var longitude = location.lon;
+        var latitude = location.latitude;
+        var longitude = location.longitude;
         $.ajax({
             url: 'https://api.openweathermap.org/data/2.5/onecall?lat=' + latitude + '&lon=' + longitude + '&appid=7a88df754fa4869b2e32df8f2905389f'
         }).done(function (weatherResponse) {
@@ -37,7 +37,7 @@ $(document).ready(function () {
                 `<div class="current-weather-coords well px-5 py-3 col-7">
                     <div class="mt-3">
                         <h6 class="d-inline">${location.city}, </h6>
-                        <h6 class="d-inline">${location.country} Weather</h6>
+                        <h6 class="d-inline">${location.country_code2} Weather</h6>
                     </div>
                     <p>as of <span class="font-weight-bold"> ${formatAMPM(new Date)}</span></p>
                     <div class="row p-0 m-0">
