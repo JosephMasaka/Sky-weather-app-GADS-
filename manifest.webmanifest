@@ -2,6 +2,7 @@
     "name": "Skyweather",
     "short_name": "Skyweather",
     "start_url": ".",
+    "theme_color": "#343a40",
     "display": "standalone",
     "background_color": "#343a40",
     "description": "A simpl weather app using Open Weather Api.",
