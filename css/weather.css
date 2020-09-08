@@ -252,4 +252,13 @@ nav .b-custom{
     nav a h3{
         font-size: 1rem;
     }
+
+    .img-custom {
+        height: 150px;
+        top: 20%;
+    }
+
+    .daily-forecast{
+        padding: 0 7%;
+    }
 }
