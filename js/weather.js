@@ -60,7 +60,7 @@ $(document).ready(function () {
             `)
         
         $('#today-forecast').append(
-            `<h5 class="font-weight-bold px-4 my-3">Average Daily Temperature for ${location.city}, ${location.country}</h5>
+            `<h5 class="font-weight-bold px-4 my-3">Average Daily Temperature for ${location.city}, ${location.country_code2}</h5>
             <div class="row daily-forecast text-center">
                 <div class="col">
                     <h6 class="font-weight-bold mb-3">Day</h6>
