@@ -62,6 +62,12 @@ nav .b-custom{
     margin: 0 13.7% !important;
 }
 
+footer{
+    color: #fff !important;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);;
+}
+
 @media screen and (max-width: 1500px){
     nav .b-custom{
         right: 18%;
